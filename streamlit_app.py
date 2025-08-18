@@ -83,7 +83,7 @@ def main():
                 Data comes solely from the _Previous Seasons_ section of each team's _Gameweek History_.  
                 - All current league teams are included.  
                 - Teams that were previously in the league but are no longer are not included.  
-                - Teams not previously in this league but with FPL history will be displayed in past seasons.  
+                - Teams not previously in the league but with FPL history will be displayed in past seasons.  
                 - The starting season year can be adjusted to choose how far back the history goes. 
                 """)
 
