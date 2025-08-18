@@ -76,6 +76,18 @@ def main():
             unsafe_allow_html=True,
         )
 
+        with st.expander("Dashboard Information"):
+            st.markdown("""
+            This dashboard displays the history of all current teams in an FPL league, providing historic league tables and summary statistics based on each manager’s past ranks.
+
+            ##### ⚠️ Important Notes
+            - Only teams that are currently in the league are included.  
+            - Data is based solely on the "Previous Seasons" section within each team's "Gameweek History".  
+            - Teams that were previously in the league but are not now are not included.  
+            - Teams that weren’t previously in this league but have FPL history will still have their past seasons displayed.  
+            - You can manually adjust the starting season year to select how far back the history should go.  
+            """)
+
         # Input number
         league_id = st.number_input(
             "Enter League ID",
@@ -214,7 +226,6 @@ def main():
             st.subheader(f"{season_history_df_output_dash_header}", divider="grey")
             data_history, chart_history = st.tabs(["📃Data", "📈 Chart"])
             with data_history:
-
                 # Convert DataFrame to CSV
                 csv = season_history_df_output.to_csv(index=False).encode("utf-8")
                 st.download_button(
