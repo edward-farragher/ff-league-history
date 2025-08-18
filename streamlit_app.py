@@ -81,7 +81,7 @@ def main():
             This dashboard displays the history of all current teams in an FPL league, providing historic league tables and summary statistics based on each manager’s past ranks.
 
             ##### ⚠️ Important Notes
-            Data is based solely on the "Previous Seasons" section within each team's "Gameweek History".  Therefore:
+            Data is based solely on the _Previous Seasons_ section within each team's _Gameweek History_.  Therefore:
             - Only teams that are currently in the league are included. 
             - Teams that were previously in the league but are not now are not included.  
             - Teams that weren’t previously in this league but have FPL history will still have their past seasons displayed.  
