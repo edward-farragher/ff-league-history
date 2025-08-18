@@ -78,7 +78,7 @@ def main():
 
         with st.expander("Dashboard Information"):
             st.markdown("""
-                This dashboard displays summary statistics and historic league tables for the selected mini league.
+                This dashboard displays summary statistics and historic league tables for a selected mini league.
 
                 Data comes solely from the _Previous Seasons_ section of each team's _Gameweek History_.  
                 - All current league teams are included.  
