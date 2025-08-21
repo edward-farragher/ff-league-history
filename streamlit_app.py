@@ -81,7 +81,7 @@ def main():
                 This dashboard shows summary statistics and historic league tables for a selected mini-league.  
                  - **Data source:** All data comes from the _Previous Seasons_ section of each team’s _Gameweek History_, via the FPL API. 
                  - **Please note:** The dashboard only includes teams currently in the mini-league, and uses their past season records to build the historical view.  
-                 - **Customisation:** You can adjust the starting season year to choose how far back the history goes.  
+                 - **Settings:** You can adjust the starting season year to choose how far back the history goes.  
              """)
 
         # Input number
