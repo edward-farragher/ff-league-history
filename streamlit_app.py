@@ -78,14 +78,11 @@ def main():
 
         with st.expander("Dashboard Information"):
             st.markdown("""
-                This dashboard displays summary statistics and historic league tables for a selected mini league.
-
-                Data comes solely from the _Previous Seasons_ section of each team's _Gameweek History_.  
-                - All current league teams are included.  
-                - Teams that were previously in the league but are no longer are not included.  
-                - Teams not previously in the league but with FPL history will be displayed in past seasons.  
-                - The starting season year can be adjusted to choose how far back the history goes. 
-                """)
+                This dashboard shows summary statistics and historic league tables for a selected mini-league.  
+                 - **Data source:** All data comes from the _Previous Seasons_ section of each team’s _Gameweek History_.  
+                 - **Please note:** The dashboard only includes teams currently in the mini-league, and uses their past season records to build the historical view.  
+                 - **Customisation:** You can adjust the starting season year to choose how far back the history goes.  
+             """)
 
         # Input number
         league_id = st.number_input(
