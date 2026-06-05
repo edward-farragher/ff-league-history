@@ -51,6 +51,23 @@ def get_team_and_league_data(league_id):
         team_ids=team_ids,
     )
 
+    if final_gw_finished:
+        season_history = [
+            item
+            for item in season_history
+            if item["season_name"] != current_season_year
+        ]
+        relevant_columns = [
+            "season_name",
+            "total_points",
+            "rank",
+            "team_id",
+            "team_name",
+            "manager_name",
+        ]
+        new_entries = season_current_df[relevant_columns].to_dict("records")
+        season_history.extend(new_entries)
+
     season_history_df = summarise_season_history(season_history=season_history)
 
     return (
